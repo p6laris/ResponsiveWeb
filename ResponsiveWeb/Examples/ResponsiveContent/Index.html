@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1.0,width=device-width"/>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+.Header{
+  background-color: indianred;
+  color: whitesmoke;
+  padding: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  height: 600px;
+}
+
+.left , .right{
+  height: 600px;
+}
+
+
+.right {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 30%;
+}
+
+@media screen and (max-width: 480px) { 
+    .container{
+        flex-direction: column;
+    }
+    .left{
+      height: 500px;
+    }
+   }
+   @media (max-width: 767px) { 
+    .container{
+        flex-direction: column;
+    }
+    .left{
+      height: 500px;
+    }
+} 
+</style>
+</head>
+<body>
+
+<div class="Header">
+  <h1>Im Header</h1>
+</div>
+
+
+
+<div class="container">
+  <div class="left">Im Left</div>
+  <div class="right">Im Right</div>
+</div>
+
+</body>
+</html>
+
+
